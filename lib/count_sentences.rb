@@ -11,7 +11,7 @@ class String
   end
 
   def exclamation?
-
+    self.match(/!$/) ? true : false
   end
 
   def count_sentences
