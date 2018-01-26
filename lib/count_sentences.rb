@@ -19,5 +19,6 @@ class String
     self.split(" ").each do |word|
       sentences += 1 if word.sentence? || word.question? || word.exclamation?
     end
+    sentences
   end
 end
