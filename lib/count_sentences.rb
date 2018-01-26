@@ -15,6 +15,9 @@ class String
   end
 
   def count_sentences
-    self.split(". ").split("? ").split("! ").length
+    sentences = 0
+    self.split(" ").each do |word|
+      sentences += 1 if word.sentence? || word.question? || word.exclamation?
+    end
   end
 end
